@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.font-text {
+  font-size: 16px;
+  /* color: #fff; */
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.btn-apply {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: 2px solid #00bbd3;
+  color: #00bbd3;
+  border-radius: 5px;
+}
+.btn-apply:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.getStyleHeader {
+  color: #3c3950;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+  /* font-size: 10px; */
+}
+
+a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.fa-angle-right {
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  margin-left: 10px;
+}
+
+#background-layout {
+  background-color: #fff;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fa-star-of-david {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.fa-solid, .fa-brands {
+  margin-right: 10px;
+}
+
+.list-link {
+  display: flex;
+}
+
+.list-link > a {
+  margin-right: 5px;
+}
+
+.list-link > a:hover {
+  cursor: pointer;
+  color: #00bcd4;
+}
+
+i.fa-solid.fa-cart-shopping {
+  margin-right: -2px;
+}
+
+.footer-margin {
+  margin-right: 5px;
+}
+
+.footer-contact-layout-Policy {
+  padding: 0 10px;
+}
+
+.copyright-text {
+  color: #0d6578;
+}
+
+.fa-twitter {
+  color: #16a7b9;
+}
+
+.fa-facebook {
+  color: #315bd6;
+}
+
+.fa-youtube {
+  color: #ae0e0e;
+}
+
+.fa-google {
+  color: #61262d;
+}/*# sourceMappingURL=base.css.map */

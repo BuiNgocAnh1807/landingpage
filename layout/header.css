@@ -1,0 +1,56 @@
+header .header-layout {
+  /* width: 100%; */
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  background: #f4f6f7;
+}
+header .header-layout .logo-icon {
+  display: flex;
+  align-items: center;
+}
+header .header-layout .logo-icon .h1-text {
+  font-size: 18px;
+}
+header .header-layout .logo-icon:hover {
+  cursor: pointer;
+}
+header .header-layout .header-layout-icon {
+  display: flex;
+  position: relative;
+}
+header .header-layout .header-layout-icon .arrow-left {
+  position: relative;
+  background-color: #00bcd4;
+  margin-left: 10px;
+  width: 20px;
+  height: 10px;
+}
+header .header-layout .header-layout-icon .arrow-left::before {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #00bcd4;
+  margin-left: -5px;
+}
+header .header-layout .btn-menu {
+  display: none;
+}
+header .flex .layout-list {
+  display: flex;
+  align-items: center;
+}
+header .flex .btn-change {
+  font-size: 16px;
+  border: none;
+  padding: 2px 4px;
+  font-family: emoji;
+  border-radius: 2px;
+  background: #666;
+  color: #fff;
+}/*# sourceMappingURL=header.css.map */
