@@ -22,7 +22,7 @@ footer{
         margin-bottom: 20px;
         .footer-div-col{
             width: 25%;
-            margin-left: 10px;
+            // margin-left: 10px;
             /* margin-right: 42px; */
             // padding: 0 10px;
             .footer-div-col-h1{
@@ -38,8 +38,8 @@ footer{
                 margin-bottom: 10px;
             }
         }
-        .gp-footer{
-            // margin: 0 10px;
+        .footer-div-col-center{
+            margin: 0 10px;
         }
     }
     .footer-contact{
@@ -50,5 +50,15 @@ footer{
         height: 100px;
         align-items: center;
         color: #fff;
+        .layout-list{
+            .footer-contact-layout-Policy{
+                padding: 0 10px;
+            }
+        }
+        div{
+            .copyright-text{
+                color: #0d6578;
+            }
+        }
     }
 }

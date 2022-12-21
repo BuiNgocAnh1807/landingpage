@@ -1,27 +1,20 @@
 
-// Xac dinh cac mau chu dao cua trang web, dat var và dùng.
-// Có thể đặt class dùng chung: vd: .flex-center {}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap');
 *{
-    // những phần chung nhất kiểu như này thì nên để ở trên đầu
     margin: 0;
     padding: 0;
     font-size: 16px;
     box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
 }
 // 
 .font-text{
     font-size: 16px;
-    // set chung cho html, body chung nhất: font, màu chủ đạo,...
-    // có thể tìm hiểu reset css hoặc normalize css
-    /* color: #fff; */
 }
 ul li{
     list-style-type: none;
-    // cái này cũng chung nhất này, để hết lên trên đầu hoặc tách thành module
 }
-.btn-apply{
-    // mixin k có biến thì có thể dùng class rồi extend chẳng hạn
-    // có thể tách thành module
+.select-footer-btn{
     margin-left: 10px;
     padding: 10px 15px;
     border: 2px solid #00bbd3;
@@ -32,39 +25,10 @@ ul li{
         opacity: 0.8;
     }
 }
-.getStyleHeader{
-    // Đặt tên mixin sao cho dễ đọc, mô tả đúng hàng động như kiểu đặt tên hàm, vd getListUser().
-    // 1 screen thì chỉ nên có 1 h1.
+.header-caculate{
     color: #3c3950;
     font-size: 36px;
     margin-bottom: 20px;
-}
-
-a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 3px;
-    /* font-size: 10px; */
-}
-a:hover{
-    cursor: pointer;
-    color: red;
-}
-.fa-angle-right{
-    font-size: 12px;
-    margin-right: 2px;
-}
-.flex{
-    display: flex;
-}
-.btn{
-    margin-left: 10px;
-}
-#background-layout{
-    background-color: #fff;
-    margin-top: 10px;
-    padding-bottom: 10px;
 }
 .fa-star-of-david{
     font-size: 16px;
@@ -73,28 +37,8 @@ a:hover{
 .fa-solid, .fa-brands{
     margin-right: 10px;
 }
-.list-link{
-    display: flex;
-}
-.list-link > a {
-    margin-right: 5px;
-}
-.list-link > a:hover{
-    cursor: pointer;
-    color: #00bcd4;
-}
 i.fa-solid.fa-cart-shopping {
     margin-right: -2px;
-}
-
-.footer-margin{
-    margin-right: 5px;
-}
-.footer-contact-layout-Policy{
-    padding: 0 10px;
-}
-.copyright-text{
-    color: #0d6578;
 }
 .fa-twitter{
     color: #16a7b9;

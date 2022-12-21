@@ -1,6 +1,5 @@
 section{
     padding: 20px 5rem;
-    // margin: 20px 0;
     table{
         width: 100%;
         
@@ -32,7 +31,6 @@ section{
                     }
                 }
                 .quantity {
-                    // margin-right: 60px;
                     text-align: center;
                     padding: 10px 0;
                     input {
@@ -43,8 +41,7 @@ section{
                         color: #43484D;
                         font-weight: 300;
                       }
-                      button[class*= -btn] {
-                        // sẽ có nhiều button đều có class btn chung thế này, cần đặt css rõ chức năng hơn, cũng k nen set cứng width heigt
+                      button[class*= -btn-quantity] {
                         padding: 10px 10px;
                         background-color: #E1E8EE;
                         border-radius: 6px;
@@ -68,7 +65,7 @@ section{
                 border: 1px solid #f5f7f6;
             }
             .btn-apply{
-                @extend .btn-apply
+                @extend .select-footer-btn
             }
         }
         .float-right{
@@ -98,12 +95,12 @@ section{
         margin-top: 30px;
         .calculate{
             h1{
-               @extend .getStyleHeader;
+               @extend .header-caculate;
             }
             .calculate-div-btn{
                 margin-top: 10px;
                 .calculate-btn{
-                    @extend .btn-apply;
+                    @extend .select-footer-btn;
                     margin: 0;
                 }
             }
@@ -112,7 +109,7 @@ section{
     .selector-total-cart{
         padding: 0 90px;
         h1 {
-            @extend .getStyleHeader;
+            @extend .header-caculate;
         }
         table{
             tr{

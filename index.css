@@ -1,67 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-size: 16px;
   box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
 }
 
 .font-text {
   font-size: 16px;
-  /* color: #fff; */
 }
 
 ul li {
   list-style-type: none;
 }
 
-.btn-apply, section .select-total .calculate .calculate-div-btn .calculate-btn, section .select-footer .select-footer-coupon .btn-apply {
+.select-footer-btn, section .select-total .calculate .calculate-div-btn .calculate-btn, section .select-footer .select-footer-coupon .btn-apply {
   margin-left: 10px;
   padding: 10px 15px;
   border: 2px solid #00bbd3;
   color: #00bbd3;
   border-radius: 5px;
 }
-.btn-apply:hover, section .select-total .calculate .calculate-div-btn .calculate-btn:hover, section .select-footer .select-footer-coupon .btn-apply:hover {
+.select-footer-btn:hover, section .select-total .calculate .calculate-div-btn .calculate-btn:hover, section .select-footer .select-footer-coupon .btn-apply:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
-.getStyleHeader, section .selector-total-cart h1, section .select-total .calculate h1 {
+.header-caculate, section .selector-total-cart h1, section .select-total .calculate h1 {
   color: #3c3950;
   font-size: 36px;
   margin-bottom: 20px;
-}
-
-a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 3px;
-  /* font-size: 10px; */
-}
-
-a:hover {
-  cursor: pointer;
-  color: red;
-}
-
-.fa-angle-right {
-  font-size: 12px;
-  margin-right: 2px;
-}
-
-.flex {
-  display: flex;
-}
-
-.btn {
-  margin-left: 10px;
-}
-
-#background-layout {
-  background-color: #fff;
-  margin-top: 10px;
-  padding-bottom: 10px;
 }
 
 .fa-star-of-david {
@@ -73,33 +42,8 @@ a:hover {
   margin-right: 10px;
 }
 
-.list-link {
-  display: flex;
-}
-
-.list-link > a {
-  margin-right: 5px;
-}
-
-.list-link > a:hover {
-  cursor: pointer;
-  color: #00bcd4;
-}
-
 i.fa-solid.fa-cart-shopping {
   margin-right: -2px;
-}
-
-.footer-margin {
-  margin-right: 5px;
-}
-
-.footer-contact-layout-Policy {
-  padding: 0 10px;
-}
-
-.copyright-text {
-  color: #0d6578;
 }
 
 .fa-twitter {
@@ -118,6 +62,10 @@ i.fa-solid.fa-cart-shopping {
   color: #61262d;
 }
 
+header #background-layout {
+  background-color: #fff;
+  margin-top: 20px;
+}
 header .header-layout {
   /* width: 100%; */
   padding: 0 5rem;
@@ -161,9 +109,39 @@ header .header-layout .header-layout-icon .arrow-left::before {
 header .header-layout .btn-menu {
   display: none;
 }
+header .header-layout .header-layout-list-link {
+  display: flex;
+}
+header .header-layout .header-layout-list-link > a {
+  margin-right: 5px;
+}
+header .header-layout .header-layout-list-link > a:hover {
+  cursor: pointer;
+  color: #00bcd4;
+}
+header .flex {
+  display: flex;
+}
+header .flex .btn {
+  margin-left: 10px;
+}
 header .flex .layout-list {
   display: flex;
   align-items: center;
+}
+header .flex .layout-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+}
+header .flex .layout-list li a .fa-angle-right {
+  font-size: 12px;
+  margin-right: 2px;
+}
+header .flex .layout-list li a:hover {
+  cursor: pointer;
+  color: red;
 }
 header .flex .btn-change {
   font-size: 16px;
@@ -220,14 +198,14 @@ section table .tbody-group td .quantity input {
   color: #43484D;
   font-weight: 300;
 }
-section table .tbody-group td .quantity button[class*=-btn] {
+section table .tbody-group td .quantity button[class*=-btn-quantity] {
   padding: 10px 10px;
   background-color: #E1E8EE;
   border-radius: 6px;
   border: none;
   cursor: pointer;
 }
-section table .tbody-group td .quantity button[class*=-btn] .fa-plus, section table .tbody-group td .quantity button[class*=-btn] .fa-minus {
+section table .tbody-group td .quantity button[class*=-btn-quantity] .fa-plus, section table .tbody-group td .quantity button[class*=-btn-quantity] .fa-minus {
   margin: 0;
 }
 section .select-footer {
@@ -304,7 +282,6 @@ footer .footer-div {
 }
 footer .footer-div .footer-div-col {
   width: 25%;
-  margin-left: 10px;
   /* margin-right: 42px; */
 }
 footer .footer-div .footer-div-col .footer-div-col-h1 {
@@ -319,6 +296,9 @@ footer .footer-div .footer-div-col .flex-header {
   align-items: center;
   margin-bottom: 10px;
 }
+footer .footer-div .footer-div-col-center {
+  margin: 0 10px;
+}
 footer .footer-contact {
   display: flex;
   justify-content: space-between;
@@ -327,6 +307,12 @@ footer .footer-contact {
   height: 100px;
   align-items: center;
   color: #fff;
+}
+footer .footer-contact .layout-list .footer-contact-layout-Policy {
+  padding: 0 10px;
+}
+footer .footer-contact div .copyright-text {
+  color: #0d6578;
 }
 
 .nav-mobile {
@@ -427,9 +413,6 @@ footer .footer-contact {
   }
   section .select-footer .media-btn {
     margin-top: 10px;
-  }
-  section .selector-total-cart table tr {
-    /* Behave  like a "row" */
   }
   section .selector-total-cart table tr .title-media {
     text-align: center;
