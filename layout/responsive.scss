@@ -1,0 +1,161 @@
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  max-width: 100%;
+  background-color: #fff;
+  display: block;
+  padding-top: 35px;
+  padding-right: 200px;
+  transform: translateX(300px);
+}
+.font-icon-social:hover {
+  cursor: pointer;
+}
+.check-input:checked ~ .nav-overlay {
+  display: block;
+}
+.check-input:checked ~ .nav-mobile {
+  transform: translateX(0);
+}
+.nav-mobile > a {
+  padding: 10px 0;
+}
+.media-xmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 10px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    .mobile-media {
+      display: none;
+    }
+    .header-layout {
+      .media-layout {
+        display: none;
+      }
+      .btn-menu {
+        display: block;
+      }
+    }
+    .media-list-link {
+      display: none;
+    }
+  }
+
+  section {
+    table {
+      border: 0;
+    }
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: 0.625em;
+    }
+
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 0.8em;
+    }
+
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+    .select-footer {
+      .media-btn {
+        margin-top: 10px;
+      }
+    }
+    .selector-total-cart {
+      table {
+        tr {
+          .title-media {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .select-total {
+      .calculate {
+        .media-input {
+          margin-top: 10px;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+  footer {
+    .media-footer-content {
+      display: block;
+      .media-footer-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    .footer-contact {
+      .media-list {
+        display: inline-flex;
+      }
+    }
+    .media-icon {
+      display: block;
+      text-align: center;
+      line-height: 32px;
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1100px) {
+  header {
+    .mobile-media {
+      display: none;
+    }
+  }
+  section {
+    .select-total {
+      .calculate {
+        .media-input {
+          margin-top: 10px;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+//responsive
