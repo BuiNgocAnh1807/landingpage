@@ -5,14 +5,10 @@ header {
   }
   .header-layout {
     padding: 0 5rem;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 30px;
     background: #f4f6f7;
     .logo-icon {
-      display: flex;
-      align-items: center;
       .h1-text {
         font-size: 18px;
       }
@@ -21,7 +17,6 @@ header {
       cursor: pointer;
     }
     .header-layout-icon {
-      display: flex;
       position: relative;
       .arrow-left {
         position: relative;
@@ -44,9 +39,6 @@ header {
     .btn-menu {
       display: none;
     }
-    .sidebar_layout--list {
-      display: flex;
-    }
     .sidebar_layout--list > a {
       margin-right: 5px;
     }
@@ -56,12 +48,10 @@ header {
     }
   }
   .header-layout--list {
-    display: flex;
     .btn {
       margin-left: 10px;
     }
     .layout-list {
-      display: flex;
       align-items: center;
       li {
         a {

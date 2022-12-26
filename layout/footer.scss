@@ -1,10 +1,14 @@
+.pt-20 {
+  padding-top: 20px;
+}
+.white {
+  color: #fff;
+}
+
 footer {
   background-color: #212331;
-  padding-top: 20px;
   .footer-contact {
     .layout-list {
-      display: flex;
-      align-items: center;
       .footer-contact-layout-li {
         padding: 0 10px;
         border-right: 1px solid #333;
@@ -13,8 +17,6 @@ footer {
   }
   .footer-div {
     margin: 0 5rem;
-    color: #fff;
-    display: flex;
     justify-content: space-around;
     text-align: star;
     margin-bottom: 20px;
@@ -28,8 +30,6 @@ footer {
         margin-top: 10px;
       }
       .flex-header {
-        display: flex;
-        align-items: center;
         margin-bottom: 10px;
       }
     }
@@ -38,12 +38,10 @@ footer {
     }
   }
   .footer-contact {
-    display: flex;
     justify-content: space-between;
     padding: 0 5rem;
     background-color: #181828;
     height: 100px;
-    align-items: center;
     color: #fff;
     .layout-list {
       .footer-contact-layout-Policy {
